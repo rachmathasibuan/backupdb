@@ -5,7 +5,7 @@ BACKUP_FILE="/var/opt/mssql/data"
 BACKUP_NFS="/mnt/backup"
 FILE="E_FRM2_MGP"
 date=$(date +"%Y-%m-%d")
-preparelog="/home/ubuntu/backupdb/cmd/week.log"
+preparelog="/home/ubuntu/backupdb/cmd/prepare.log"
 
 echo "***** date $(date '+%Y-%m-%d %H:%M:%S') *****" >> "$preparelog"
 
