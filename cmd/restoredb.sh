@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set variables for connection and file paths
-SERVER="tbdb"         # Example: localhost or IP address of your SQL Server
+SERVER="dback"         # Example: localhost or IP address of your SQL Server
 USER="sa"             # Example: sa
 PASSWORD="regAsm13#!"     # Your password for SQL Server login
 BACKUP_FILE="/var/opt/mssql/data"  # Full path to the backup file

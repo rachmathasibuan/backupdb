@@ -1,3 +1,11 @@
 E_FRM2_MGP*
+termometer-*
+termometerlocal-*
+tfidb-*
+tfidblocal-*
+tfimpordb-*
+tfimpordblocal-*
+tfirptdb-*
+tfirptdblocal-*
 cmd/restoredb.log
-cmd/week.log
+cmd/prepare.log
