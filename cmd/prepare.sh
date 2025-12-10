@@ -15,9 +15,9 @@ find $BACKUPDB -type f -name "$FILE-$date.bak.tar.gz" -exec tar -zxvf {} -C $BAC
 find $BACKUP_FILE -type f -name "*.bak" -exec chown mssql:mssql {} \;
 
 find $BACKUPDB -type f -name "$FILE-$date.bak.tar.gz" -exec cp {} $BACKUP_NFS \;
-find $BACKUPDB -type f -name "test-$date.sql.tar.gz" -exec cp {} $BACKUP_NFS \;
+find $BACKUPDB -type f -name "*-$date.sql.tar.gz" -exec cp {} $BACKUP_NFS \;
 
 find $BACKUPDB -type f -mtime +3 -name "*.bak.tar.gz" -exec rm {} \;
-find $BACKUPDB -type f -mtime +3 -name "test-$date.sql.tar.gz" -exec rm {} \;
+find $BACKUPDB -type f -mtime +3 -name "*-$date.sql.tar.gz" -exec rm {} \;
 find $BACKUP_NFS -type f -mtime +5 -name "*.bak.tar.gz" -exec rm {} \;
-find $BACKUP_NFS -type f -mtime +5 -name "test-$date.sql.tar.gz" -exec rm {} \;
+find $BACKUP_NFS -type f -mtime +5 -name "*-$date.sql.tar.gz" -exec rm {} \;
