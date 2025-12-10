@@ -9,3 +9,4 @@ tfirptdb-*
 tfirptdblocal-*
 cmd/restoredb.log
 cmd/prepare.log
+cmd/restore.log
