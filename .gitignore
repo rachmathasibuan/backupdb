@@ -1,6 +1,8 @@
 E_FRM2_MGP*
 termometer-*
 termometerlocal-*
+temp-*
+templocal-*
 tfidb-*
 tfidblocal-*
 tfimpordb-*
