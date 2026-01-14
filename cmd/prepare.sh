@@ -19,4 +19,4 @@ find $BACKUPDB -type f -name "*-$date.sql.tar.gz" -exec cp {} $BACKUP_NFS \;
 find $BACKUPDB -type f -mtime +2 -name "*.tar.gz" -exec rm {} \;
 find $BACKUP_NFS -type f -mtime +5 -name "*.tar.gz" -exec rm {} \;
 
-echo "***** finsih *****" >> $preparelog
+echo "***** finish *****" >> $preparelog
