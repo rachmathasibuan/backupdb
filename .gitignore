@@ -9,6 +9,7 @@ tfimpordb-*
 tfimpordblocal-*
 tfirptdb-*
 tfirptdblocal-*
+aigner_prod-*
 cmd/restoredb.log
 cmd/prepare.log
 cmd/restore.log

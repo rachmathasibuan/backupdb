@@ -2,7 +2,7 @@
 
 BACKUPDB="/home/ubuntu/backupdb"
 BACKUP_FILE="/var/opt/mssql/data"
-BACKUP_NFS="/mnt/backup"
+BACKUP_NFS="/mnt/nfs"
 FILE="E_FRM2_MGP"
 date=$(date +"%Y-%m-%d")
 preparelog="/home/ubuntu/backupdb/cmd/prepare.log"
@@ -17,6 +17,6 @@ find $BACKUPDB -type f -name "$FILE-$date.bak.tar.gz" -exec cp {} $BACKUP_NFS \;
 find $BACKUPDB -type f -name "*-$date.sql.tar.gz" -exec cp {} $BACKUP_NFS \;
 
 find $BACKUPDB -type f -mtime +2 -name "*.tar.gz" -exec rm {} \;
-find $BACKUP_NFS -type f -mtime +5 -name "*.tar.gz" -exec rm {} \;
+find $BACKUP_NFS -type f -mtime +2 -name "*.tar.gz" -exec rm {} \;
 
 echo "***** finish *****" >> $preparelog
